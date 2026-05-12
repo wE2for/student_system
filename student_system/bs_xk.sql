@@ -170,8 +170,8 @@ CREATE TABLE `xueyuan_info`  (
 INSERT INTO `xueyuan_info` VALUES (1, '信息工程学院', '巴拉巴拉巴拉', 20);
 INSERT INTO `xueyuan_info` VALUES (2, '计算机学院', '巴拉巴拉巴拉', 25);
 INSERT INTO `xueyuan_info` VALUES (3, '软件学院', '巴拉巴拉巴拉', 30);
-INSERT INTO `xueyuan_info` VALUES (4, '外国语学院', '美女很多', 25);
-INSERT INTO `xueyuan_info` VALUES (7, '文学院', '美女贼多', 30);
+INSERT INTO `xueyuan_info` VALUES (4, '外国语学院', '巴拉巴拉巴拉', 25);
+INSERT INTO `xueyuan_info` VALUES (7, '文学院', '巴拉巴拉巴拉', 30);
 
 -- ----------------------------
 -- Table structure for zhuanye_info 专业信息表
