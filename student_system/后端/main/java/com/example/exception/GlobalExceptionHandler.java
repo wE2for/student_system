@@ -1,4 +1,5 @@
 package com.example.exception;
+//异常处理
 
 import cn.hutool.log.Log;
 import cn.hutool.log.LogFactory;
