@@ -26,13 +26,13 @@ CREATE TABLE `admin_info`  (
 -- Records of admin_info
 -- ----------------------------
 INSERT INTO `admin_info` VALUES (1, 'admin', '123456', '男', '29', '18888888888', 1);
-INSERT INTO `admin_info` VALUES (15, 'admin2', '123456', '男', '23', '18877778888', 1);
-INSERT INTO `admin_info` VALUES (16, 'admin3', '123456', '女', '23', '18877778888', 1);
-INSERT INTO `admin_info` VALUES (17, 'admin4', '123456', '女', '23', '18877778888', 1);
+INSERT INTO `admin_info` VALUES (15, 'admin2', '123456', '男', '23', '18878888888', 1);
+INSERT INTO `admin_info` VALUES (16, 'admin3', '123456', '女', '23', '18877888888', 1);
+INSERT INTO `admin_info` VALUES (17, 'admin4', '123456', '女', '23', '18877788888', 1);
 INSERT INTO `admin_info` VALUES (22, 'admin5', '123456', '女', '23', '18877778888', 1);
-INSERT INTO `admin_info` VALUES (23, 'admin6', '123456', '女', '23', '18877778888', 1);
-INSERT INTO `admin_info` VALUES (24, 'admin7', '123456', '女', '23', '18877778888', 1);
-INSERT INTO `admin_info` VALUES (25, 'admin8', '123456', '女', '23', '18877778888', 1);
+INSERT INTO `admin_info` VALUES (23, 'admin6', '123456', '女', '23', '18877777888', 1);
+INSERT INTO `admin_info` VALUES (24, 'admin7', '123456', '女', '23', '18877777788', 1);
+INSERT INTO `admin_info` VALUES (25, 'admin8', '123456', '女', '23', '18877777778', 1);
 
 -- ----------------------------
 -- Table structure for class_info
@@ -155,8 +155,8 @@ CREATE TABLE `xueyuan_info`  (
 INSERT INTO `xueyuan_info` VALUES (1, '信息工程学院', '巴拉巴拉巴拉', 20);
 INSERT INTO `xueyuan_info` VALUES (2, '计算机学院', '巴拉巴拉巴拉', 25);
 INSERT INTO `xueyuan_info` VALUES (3, '软件学院', '巴拉巴拉巴拉', 30);
-INSERT INTO `xueyuan_info` VALUES (4, '外国语学院', '美女很多', 25);
-INSERT INTO `xueyuan_info` VALUES (7, '文学院', '美女贼多', 30);
+INSERT INTO `xueyuan_info` VALUES (4, '外国语学院', '巴拉巴拉巴拉', 25);
+INSERT INTO `xueyuan_info` VALUES (7, '文学院', '巴拉巴拉巴拉', 30);
 
 -- ----------------------------
 -- Table structure for zhuanye_info
