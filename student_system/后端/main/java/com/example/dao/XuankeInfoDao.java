@@ -10,7 +10,7 @@ import tk.mybatis.mapper.common.Mapper;
 import java.util.List;
 
 
-@Repository
+@Repository//
 public interface XuankeInfoDao extends Mapper<XuankeInfo> {
 
     @Select("select * from xuanke_info where name = #{name} and teacherId = #{teacherId} and studentId = #{studentId} limit 1")
