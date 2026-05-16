@@ -6,7 +6,7 @@ function checkValid(entity) {
     if (entity.phone && entity.phone !== "") {
         let reg = /^[1][3,4,5,7,8][0-9]{9}$/;
         if (!reg.test(entity.phone)) {
-            alert("请输入正确的手机号");
+            alert("请输入正确的手机号码");
             return false;
         }
     }
@@ -20,7 +20,7 @@ function checkValid(entity) {
     if (entity.cardId && entity.cardId !== "") {
         let reg = /(^\d{15}$)|(^\d{18}$)|(^\d{17}(\d|X|x)$)/;
         if (!reg.test(entity.cardId)) {
-            alert("请输入正确的身份证号");
+            alert("请输入正确的身份证号码");
             return false;
         }
     }
