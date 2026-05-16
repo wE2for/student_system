@@ -17,7 +17,6 @@
 return /******/ (function(modules) { // webpackBootstrap
 /******/ 	// The module cache
 /******/ 	var installedModules = {};
-/******/
 /******/ 	// The require function
 /******/ 	function __webpack_require__(moduleId) {
 /******/
@@ -4337,25 +4336,20 @@ var Scroll = function (_Parchment$Scroll) {
 
   return Scroll;
 }(_parchment2.default.Scroll);
-
 Scroll.blotName = 'scroll';
 Scroll.className = 'ql-editor';
 Scroll.tagName = 'DIV';
 Scroll.defaultChild = 'block';
 Scroll.allowedChildren = [_block2.default, _block.BlockEmbed, _container2.default];
-
 exports.default = Scroll;
-
 /***/ }),
 /* 23 */
 /***/ (function(module, exports, __webpack_require__) {
-
 "use strict";
-
-
 Object.defineProperty(exports, "__esModule", {
   value: true
 });
+
 exports.SHORTKEY = exports.default = undefined;
 
 var _typeof = typeof Symbol === "function" && typeof Symbol.iterator === "symbol" ? function (obj) { return typeof obj; } : function (obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; };
@@ -4414,7 +4408,8 @@ var debug = (0, _logger2.default)('quill:keyboard');
 
 var SHORTKEY = /Mac/i.test(navigator.platform) ? 'metaKey' : 'ctrlKey';
 
-var Keyboard = function (_Module) {
+var Keyboard = function (_Module) 
+{
   _inherits(Keyboard, _Module);
 
   _createClass(Keyboard, null, [{
