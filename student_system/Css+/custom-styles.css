@@ -3,45 +3,30 @@
   COMMON STYLES
 
 ------------------------------------------------*/
-
 html,body {
-
     height: 100%;
-
 }
 
 body {
-
     font-family: 'Open Sans', sans-serif;
-
     background-color: #E6E6E6;
-
 }
 
 .row {
-
     margin-right: 0;
-
 }
 
 #wrapper {
-
     width: 100%;
-
 }
 
 
 
 #page-wrapper {
-
     padding: 0 15px;
-
     min-height: 600px;
-
     background: #E6E6E6;
-
 }
-
 
 
 #page-inner {
@@ -52,7 +37,7 @@ body {
 
     background-color: transparent;
 
-    /* padding: 10px; */
+    /*   padding:10px;  */
 
 }
 
@@ -71,7 +56,6 @@ body {
     border: 1px solid #f3f3f3;
 
 }
-
 
 
 h1, .h1, h2, .h2, h3, .h3 {
@@ -253,7 +237,6 @@ p {
     text-align: left;
 
 }
-
 
 
 .panel-left {
