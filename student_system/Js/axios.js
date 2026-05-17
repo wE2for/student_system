@@ -1701,15 +1701,4 @@ return /******/ (function(modules) { // webpackBootstrap
 	 * @param {Function} callback
 	 * @returns {Function}
 	 */
-	module.exports = function spread(callback) {
-	  return function wrap(arr) {
-	    return callback.apply(null, arr);
-	  };
-	};
-
-
-/***/ })
-/******/ ])
-});
-;
-//# sourceMappingURL=axios.map
+	
