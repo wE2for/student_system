@@ -2,13 +2,17 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8"/>
+	<!-- 适配，保证页面正常显示 -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>登陆页面</title>
 
+	 <!-- 引入Bootstrap样式，用于页面布局和按钮、表单美化 -->
     <link href="../css/bootstrap.css" rel="stylesheet"/>
+	<!-- 引入字体图标-->
     <link href="../css/font-awesome.css" rel="stylesheet"/>
 
     <style>
+		/* Vue渲染前隐藏，防止页面闪烁 */
         [v-cloak] {
             display: none;
         }
@@ -25,6 +29,8 @@
            <h2 style="color: white">欢迎登录学生选课管理系统</h2>
         </div>
     </div>
+	
+	<!-- 登录表单区域，自适应居中 -->
     <div class="row ">
 
         <div class="col-md-4 col-md-offset-4 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
@@ -33,15 +39,20 @@
                 <form role="form">
                     <hr/>
                     <br/>
+					
+					<!-- 用户名输入框 -->
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-tag"></i></span>
                         <input type="text" class="form-control" v-model="user.name" placeholder="用户名"/>
                     </div>
+					
+					 <!-- 密码输入框 -->
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-lock"></i></span>
                         <input type="password" class="form-control" v-model="user.password" placeholder=" 密码"/>
                     </div>
                     <h5 style="color: white">请选择角色</h5>
+					<!-- 角色选择下拉框：管理员/教师/学生 -->
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-user"></i></span>
                         <select class="form-control" v-model="user.level">
@@ -51,11 +62,15 @@
                             <option value="3">学生</option>
                         </select>
                     </div>
+					
+					<!-- 图形验证码输入框 + 验证码图片 -->
                     <div class="form-group input-group">
                         <span class="input-group-addon"><i class="fa fa-check-square"></i></span>
                         <input type="text" class="form-control" style="width: 150px; margin-right: 5px" v-model="user.verCode" placeholder="请输入图形验证码"/>
                         <img :src="captchaUrl" @click="clickImg()" width="135px" height="33px" />
                     </div>
+
+
 
                     <div style="text-align: center">
                         <a href="javascript:void(0)" class="btn btn-block btn-primary" @click="login">登录</a>
@@ -76,6 +91,7 @@
 <script src="../js/vue2.6.11/axios.js"></script>
 
 <script>
+	// 创建Vue实例
     new Vue({
         el: "#app",
         data: {
@@ -106,6 +122,8 @@
                     }
                 })
             },
+			
+			// 点击验证码图片：刷新验证码（加随机数防止浏览器缓存）
             clickImg() {
                 this.captchaUrl='/captcha?' + Math.random();
                 this.user.verCode = "";
